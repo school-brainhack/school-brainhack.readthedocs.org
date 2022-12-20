@@ -5,3 +5,4 @@
    :caption: Contents:
 
    STUDENTS
+   ORGANIZERS
