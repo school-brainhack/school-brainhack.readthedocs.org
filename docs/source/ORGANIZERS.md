@@ -2,10 +2,10 @@
 
 ## Resources
 [Brainhack School Github Organization](https://github.com/school-brainhack/)
-[Brainhack School Website](https://github.com/school-brainhack/school-brainhack.github.io/issues/153)
+[Brainhack School Website](https://github.com/school-brainhack/school-brainhack.github.io/)
 [Brainhack School Documentations](https://school-brainhack.readthedocs.io/en/latest/)
 [Brainhack School Documentation Github](https://github.com/school-brainhack/school-brainhack.readthedocs.org)
-[List of the prevoius edition of the school](https://github.com/school-brainhack/school-brainhack.github.io/issues/153)
+[List of the prevoius edition of the school](https://school.brainhackmtl.org/)
 
 ## General information page 
 
