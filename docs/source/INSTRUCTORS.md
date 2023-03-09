@@ -19,23 +19,7 @@ An instructor is expected to have a good understanding of how to conduct scienti
 - Guide students with queries and give feedback on their projects.
 - Keep track of the student’s progress.
 - Report technical and practical problems to their local hub organizers.
-
-
-### What are the benefits of being an instructor?
-
-- Gaining practical and theoretical knowledge of the course materials.
-- Improving teaching and mentorship skills.
-- Peer working and collaborative research activities. 
-- Being part of a network of researchers and students from various institutes across the globe.
-
-
-### How many hours a day/week is an instructor expected to contribute? 
-
-An instructor is expected to be present both in-person & online for a minimum of 3 hours a day (1 hour for the morning, 1 hour for the afternoon Q&Q/Clinic sessions, and 1 extra hour to reply to any questions), totaling approximately 60 hours throughout the school. The instructor will be compensated for their time and contributions. 
-
-### How is an instructor associated with students?
-
-Students and instructors will be matched based on overlapping research interests and skill sets in a pod to meet regularly.
+- In the lead up to the school contribute to updating and adding new modules (optional).
 
 
 ### How is an instructor expected to communicate with the students?
@@ -51,9 +35,9 @@ They are expected to but do not have to. Each hub will primarily be responsible 
 
 ### How will an instructor follow the progress of a student?  
 
-For tracking the progress with students' completion of the module assignments, the local hub organizers that you are affiliated with will provide a means, mostly a shared sheet with the students' names and modules. So you will issue whether a student has completed an assignment based on their individual reporting.
+For tracking the progress with students' completion of the module assignments, the local hub organizers that you are affiliated with will provide a means, mostly a shared sheet with the students' names and modules. Students are asked to complete exercises for each module and share their progress with instructors, so that they can be marked as complete.
 
-For the project improvements and assignments, meeting with the students 2 times a day will give you likely observations regarding how a student is progressing with their needs and executions.
+For project progress, regular meetings with students should give you a good idea of how they are doing.
 
 ### What am I expected to do during a clinic/Q&A call?
 
@@ -71,21 +55,16 @@ Sometimes some students are stuck with an idea, choosing the right tool, or find
 
 The best way to help those students would be to ask what aspect of their project is preventing them from progressing and give feedback to them to narrow down their project scope to facilitate execution.
 
-Please remember you are there to provide means for students to progress rather than tackling the question together. You are not expected to boggle down the code or execute a task for them, or not to micro-manage their progress but to give them insight and guidance regarding how they can move forward in a possible way. 
 
 
-
-### What should I do if a student needs to complete module assignments?
-
-Similar to project executions, sometimes students might struggle with finishing the modules and the assignments due to technical struggles or time concerns because of other commitments they have. 
+### What should I do if a student struggles to complete module assignments?
 
 In such cases, reach students to hear the reason that lags them behind. If it is a technical problem request them to raise their problem in the Discord channels to get more help. Please contact the local hub organizers for their advice if it is due to the need for more time. 
 
-Please remind yourself that strict requirements are especially expected for the students who take the course as a credited course. 
+Students who undertake the school as a credited course must meet requirements of the school.
 
-### What should I do if a student claims they are already proficient in some modules and would like to be excluded from finishing the module issued as those modules are completed?
+
+### What should I do if a student asks to be excluded from completing a module, due to already being proficient in the material?
 
 Ask them for previous work that might show their proficiency in the modules. For eg., some students might be competent in using git/GitHub already, and they might have a repository and share the link with you. 
-
-However, please remember to keep the engagement and requests on kind terms rather than an obligatory ones.
 
