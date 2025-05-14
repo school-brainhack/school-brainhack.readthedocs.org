@@ -197,6 +197,18 @@ To add a new site:
 
 ---
 
+### 🔗 Registration Page (Hugo site)
+
+To edit the registration page on the main website, update the Markdown file:
+
+content/en/register.md
+
+Embed the Google Form using standard HTML inside the markdown file, for example:
+
+<iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+Replace the EXAMPLE_FORM_ID with the actual form ID provided by Google.
+
 ## Technology Stack
 
 * **Hugo** (`v0.108.0`, extended edition)
