@@ -1,8 +1,8 @@
 .. include:: OVERVIEW.rst
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Contents:
+   :maxdepth: 2
+   :caption: Developer Documentation
+   :glob:
 
-   STUDENTS
-   ORGANIZERS
+   dev/*
