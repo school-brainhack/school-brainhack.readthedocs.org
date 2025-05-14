@@ -1,6 +1,6 @@
 # Website Overview
 
-This document provides a technical overview of the Brainhack School website infrastructure. It is intended for developers and maintainers.
+This document provides a technical overview of the Brainhack School website infrastructure. It is intended for developers and maintainers. The main website repository is hosted at: [https://github.com/school-brainhack/school-brainhack.github.io](https://github.com/school-brainhack/school-brainhack.github.io) and the website is live at: [https://school-brainhack.github.io](https://school-brainhack.github.io)
 
 ## Goals
 
@@ -197,13 +197,21 @@ To add a new site:
 
 ---
 
-### 🔗 Registration Page (Hugo site)
+## 🔗 Registration Page (Hugo site)
 
 To edit the registration page on the main website, update the Markdown file:
+
 ```
 content/en/register.md
 ```
-Embed the Google Form using standard HTML inside the markdown file.
+
+Embed the Google Form using standard HTML inside the markdown file, for example:
+
+```html
+<iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+```
+
+Replace the `EXAMPLE_FORM_ID` with the actual form ID provided by Google.
 
 ### 🌐 Managing Past Editions
 
@@ -231,12 +239,57 @@ The past editions are referenced in the main site's config (usually in the navig
   url: https://brainhackmtl.github.io/school2018/
 ```
 When preparing a new edition:
+1. Fork the current repository into a dedicated organization (e.g. `2025-school-brainhack`)
+2. Set GitHub Pages to publish from `main` or `docs/`
+3. Update the past editions list on the main site
+## 🧩 Sidebar Templates and Localised Content
 
-Fork the current repository into a dedicated organization (e.g. 2025-school-brainhack)
+The Brainhack School website uses custom sidebar templates based on page context:
 
-Set GitHub Pages to publish from main or docs/
+- `layouts/partials/sidebar.html`: Used on the **project gallery**
+- `layouts/partials/sidebar_modules.html`: Used for **teaching modules**
+- `layouts/partials/sidebar_sites.html`: Used for the **list of participating sites**
 
-Update the past editions list on the main site
+Each of these partials can be injected into the main layout depending on the active section.
+
+### Sidebar Content Source
+
+Text blocks such as:
+
+```go
+<p>{{ T "SidebarSub" | markdownify }}</p>
+```
+
+Reference the translation string with ID `SidebarSub` in the file `i18n/en.yaml`. This is part of Hugo’s i18n system, which was originally designed for multilingual support but is now also used as a message registry.
+
+To update or remove this kind of string:
+
+1. Open `i18n/en.yaml`
+2. Edit the relevant `id` (e.g. `SidebarSub`)
+3. Rebuild the site locally with `hugo server -D`
+
+## 🗂️ The i18n File as a Message Registry
+
+The file `i18n/en.yaml` contains a list of string identifiers and their English translations. While originally intended for multilingual support, it is now used to centralize fixed text elements like button labels, form fields, and sidebar messages.
+
+Example entries:
+
+```yaml
+- id: home
+  translation: "Home"
+- id: contactTitle
+  translation: "Contact"
+- id: contactForm
+  translation: "Contact form"
+- id: contactName
+  translation: "Your Name"
+- id: contactSend
+  translation: "Send Message"
+```
+
+To locate uneditable static text, search this file using `grep`.
+
+---
 
 ## Technology Stack
 
