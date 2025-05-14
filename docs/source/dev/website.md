@@ -200,14 +200,43 @@ To add a new site:
 ### 🔗 Registration Page (Hugo site)
 
 To edit the registration page on the main website, update the Markdown file:
-
+```
 content/en/register.md
+```
+Embed the Google Form using standard HTML inside the markdown file.
 
-Embed the Google Form using standard HTML inside the markdown file, for example:
+### 🌐 Managing Past Editions
 
-<iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+To ensure proper navigation between yearly editions of the website, it's recommended to fork each year's site into its own GitHub organization or repo (e.g. 2025-school-brainhack.github.io).
 
-Replace the EXAMPLE_FORM_ID with the actual form ID provided by Google.
+The past editions are referenced in the main site's config (usually in the navigation menu) with entries like:
+```
+- parent: past
+  name: 2024
+  url: https://2024-school-brainhack.github.io/
+- parent: past
+  name: 2022
+  url: https://2022-school-brainhack.github.io/
+- parent: past
+  name: 2021
+  url: https://psy6983.brainhackmtl.org/
+- parent: past
+  name: 2020
+  url: https://school2020.brainhackmtl.org/
+- parent: past
+  name: 2019
+  url: https://brainhackmtl.github.io/school2019/
+- parent: past
+  name: 2018
+  url: https://brainhackmtl.github.io/school2018/
+```
+When preparing a new edition:
+
+Fork the current repository into a dedicated organization (e.g. 2025-school-brainhack)
+
+Set GitHub Pages to publish from main or docs/
+
+Update the past editions list on the main site
 
 ## Technology Stack
 
